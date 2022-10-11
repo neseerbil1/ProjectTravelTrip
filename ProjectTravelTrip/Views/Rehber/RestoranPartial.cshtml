@@ -1,0 +1,18 @@
+﻿@using ProjectTravelTrip.Models.Siniflar
+@model List<Restoran>
+<div class="desti-middle">
+    <h4>Popüler Restoranlar</h4>
+    @foreach (var x in Model)
+    {
+        <div class="box-left">
+            <div class="bot-img">
+                <img src="@x.RestoranImage" alt="" style="width:120px;height:65px" />
+            </div>
+            <div class="bot-desc">
+                <p>@x.RestoranAciklama.Substring(0,80) </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    }
+    </div>
